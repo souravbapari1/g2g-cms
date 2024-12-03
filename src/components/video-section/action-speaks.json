@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_video_section_action_speaks",
+  "info": {
+    "displayName": "action speaks",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "videoId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

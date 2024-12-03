@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_list_cards_benefits",
+  "info": {
+    "displayName": "Benefit",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

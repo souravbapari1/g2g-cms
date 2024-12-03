@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sustainable_youth_academies",
+  "info": {
+    "singularName": "sustainable-youth-academy",
+    "pluralName": "sustainable-youth-academies",
+    "displayName": "Sustainable Youth  Academy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.header",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sustainabilityRegisterCard": {
+      "displayName": "Sustainability Register Card",
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.sustainability-register-card",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Experience": {
+      "type": "component",
+      "repeatable": false,
+      "component": "slides.experience-slide",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "list.languages",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transparencies",
+  "info": {
+    "singularName": "transparency",
+    "pluralName": "transparencies",
+    "displayName": "Transparency",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.header",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "reports": {
+      "displayName": "Transparency Reports",
+      "type": "component",
+      "repeatable": true,
+      "component": "list.transparency-reports",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "list.languages",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

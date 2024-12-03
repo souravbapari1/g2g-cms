@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_header_researches_labs_headers",
+  "info": {
+    "displayName": "Researches labs Header",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "images": {
+      "displayName": "Group Image",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.group-image"
+    }
+  }
+}

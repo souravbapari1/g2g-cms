@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_video_section_speech_sound_likes",
+  "info": {
+    "displayName": "speech sound like",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "videoId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

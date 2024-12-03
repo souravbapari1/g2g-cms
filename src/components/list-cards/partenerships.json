@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_list_cards_partenerships",
+  "info": {
+    "displayName": "Partenerships",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "linkdinProfile": {
+      "type": "string",
+      "required": false
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

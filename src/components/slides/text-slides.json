@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_slides_text_slides",
+  "info": {
+    "displayName": "Text Slides",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "text": {
+      "displayName": "Text list",
+      "type": "component",
+      "repeatable": true,
+      "component": "list.text-list",
+      "required": true
+    }
+  }
+}

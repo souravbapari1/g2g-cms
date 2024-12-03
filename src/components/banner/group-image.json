@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_banner_group_images",
+  "info": {
+    "displayName": "Group Image",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "center": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "left": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "right": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

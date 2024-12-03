@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monthly_summit_talks",
+  "info": {
+    "singularName": "monthly-summit-talk",
+    "pluralName": "monthly-summit-talks",
+    "displayName": "Monthly Summit Talk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "header.header",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "youthSummitTalks": {
+      "displayName": "Youth Summit Talks",
+      "type": "component",
+      "repeatable": false,
+      "component": "academics.youth-summit-talks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "experience": {
+      "displayName": "Experience Slide",
+      "type": "component",
+      "repeatable": false,
+      "component": "slides.experience-slide",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sessionsCards": {
+      "displayName": "Sessions Card",
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.sessions-card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "upcomingSession": {
+      "displayName": "Upcoming Session",
+      "type": "component",
+      "repeatable": false,
+      "component": "cards.upcoming-session",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.languages",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

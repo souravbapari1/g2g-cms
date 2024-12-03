@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_contact_impact_contacts",
+  "info": {
+    "displayName": "impactContact",
+    "icon": "discuss",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "mobileNo": {
+      "type": "string"
+    },
+    "bookMeetLink": {
+      "type": "string"
+    },
+    "personImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_contact_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "mobileNo": {
+      "type": "string"
+    },
+    "mapLocation": {
+      "type": "string"
+    }
+  }
+}

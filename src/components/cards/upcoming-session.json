@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_cards_upcoming_sessions",
+  "info": {
+    "displayName": "Upcoming Session",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "sessionDateTime": {
+      "type": "string",
+      "required": true
+    },
+    "sessionInfo": {
+      "type": "text",
+      "required": true
+    },
+    "centerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "leftImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "rightImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

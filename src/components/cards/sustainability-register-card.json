@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_cards_sustainability_register_cards",
+  "info": {
+    "displayName": "Sustainability Register Card",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.header",
+      "required": true,
+      "max": 2
+    },
+    "registerBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link",
+      "required": true
+    },
+    "viewMoreBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link",
+      "required": true
+    },
+    "sideImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

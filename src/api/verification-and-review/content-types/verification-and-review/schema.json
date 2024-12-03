@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verification_and_reviews",
+  "info": {
+    "singularName": "verification-and-review",
+    "pluralName": "verification-and-reviews",
+    "displayName": "Verification & Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.header",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "verificationSteps": {
+      "displayName": "Verification",
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.verification",
+      "required": true,
+      "max": 3,
+      "min": 3,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "applyInfoSteps": {
+      "displayName": "Apply Info Steps",
+      "type": "component",
+      "repeatable": false,
+      "component": "steps.apply-info-steps",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "cardList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.content-list",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "reportFraudTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "reportFraudDesc": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.languages",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "members": {
+      "displayName": "Board Members",
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "headerLink": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

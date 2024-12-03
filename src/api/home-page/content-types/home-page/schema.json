@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slides.header-banner",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sponsors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brands.sponsors",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Academies": {
+      "displayName": "acadeniesInfo",
+      "type": "component",
+      "repeatable": false,
+      "component": "academics.acadenies-info",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "actionSpeaks": {
+      "displayName": "action speaks",
+      "type": "component",
+      "repeatable": false,
+      "component": "video-section.action-speaks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "listCardView": {
+      "displayName": "content list",
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.content-list",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "howItWorks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "video-section.action-speaks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "faqs": {
+      "displayName": "faqs",
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.faqs",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.languages",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "researches_labs",
+  "info": {
+    "singularName": "researches-lab",
+    "pluralName": "researches-labs",
+    "displayName": "Researches Lab",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "displayName": "Researches labs Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "header.researches-labs-header",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "challenges": {
+      "type": "component",
+      "repeatable": false,
+      "component": "slides.experience-slide",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "infoCards": {
+      "displayName": "Research Info List",
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.research-info-list",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "textSlides": {
+      "displayName": "Text Slides",
+      "type": "component",
+      "repeatable": false,
+      "component": "slides.text-slides",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "researchPartner": {
+      "displayName": "Members Images List",
+      "type": "component",
+      "repeatable": true,
+      "component": "list.members-images-list",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.content-list",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "members": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

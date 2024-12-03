@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_members_board_members",
+  "info": {
+    "displayName": "Board Members",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "member": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.partenerships"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

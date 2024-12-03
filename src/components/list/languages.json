@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_list_languages",
+  "info": {
+    "displayName": "languages",
+    "icon": "connector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "english",
+        "arbic"
+      ]
+    }
+  }
+}

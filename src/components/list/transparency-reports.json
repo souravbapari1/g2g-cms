@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_list_transparency_reports",
+  "info": {
+    "displayName": "Transparency Reports",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

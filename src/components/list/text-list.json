@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_list_text_lists",
+  "info": {
+    "displayName": "Text list",
+    "icon": "quote",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.partenerships"
+    }
+  }
+}

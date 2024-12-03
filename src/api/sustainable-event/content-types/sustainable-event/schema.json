@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sustainable_events",
+  "info": {
+    "singularName": "sustainable-event",
+    "pluralName": "sustainable-events",
+    "displayName": "Sustainable Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "headerBanner": {
+      "displayName": "header",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.header",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "giveyouthavoice": {
+      "displayName": "Give youth a voice",
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.give-youth-a-voice",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "speechsoundlike": {
+      "displayName": "speech sound like",
+      "type": "component",
+      "repeatable": false,
+      "component": "video-section.speech-sound-like",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "benefit": {
+      "displayName": "Benefit",
+      "type": "component",
+      "repeatable": true,
+      "component": "list-cards.benefit",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "benefitsTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.impact-contact",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "language": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list.languages",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

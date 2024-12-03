@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_slides_experience_slides",
+  "info": {
+    "displayName": "Experience Slide",
+    "icon": "rocket",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sortTitle": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "experienceCard": {
+      "displayName": "Experience Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.experience-card"
+    }
+  }
+}

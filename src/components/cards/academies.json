@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_cards_academies",
+  "info": {
+    "displayName": "Academies",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "links": {
+      "displayName": "link",
+      "type": "component",
+      "repeatable": true,
+      "component": "link.link",
+      "required": false,
+      "max": 2
+    }
+  }
+}

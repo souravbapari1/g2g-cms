@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "research_categories",
+  "info": {
+    "singularName": "research-category",
+    "pluralName": "research-categories",
+    "displayName": "Research Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

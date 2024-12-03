@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "displayName": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linkText": {
+      "type": "string",
+      "required": true
+    },
+    "linkUrl": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "member": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.partenerships",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_cards_sessions_cards",
+  "info": {
+    "displayName": "Sessions Card",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "registerSessionLink": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "registerIndividualsSessionLink": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    }
+  }
+}

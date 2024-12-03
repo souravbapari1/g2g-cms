@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_slides_header_banners",
+  "info": {
+    "displayName": "HeaderBanner",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

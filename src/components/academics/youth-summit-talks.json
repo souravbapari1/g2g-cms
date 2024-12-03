@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_academics_youth_summit_talks",
+  "info": {
+    "displayName": "Youth Summit Talks",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "sortTitle": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "linkUrl": {
+      "type": "string"
+    }
+  }
+}

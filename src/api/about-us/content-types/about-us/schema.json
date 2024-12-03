@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.researches-labs-header",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "missionAndVission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.content-list",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "esg": {
+      "type": "component",
+      "repeatable": false,
+      "component": "list-cards.content-list",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "parteners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bordMembers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "scientificAndSustainabilityAdvisors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "educationalAdvisors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "foundationCouncil": {
+      "type": "component",
+      "repeatable": false,
+      "component": "members.board-members",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "foundationCouncilLink1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "foundationCouncilLink2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "link.link",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

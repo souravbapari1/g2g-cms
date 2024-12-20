@@ -748,6 +748,20 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    html: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          licenseKey: 'NqRZW3MvnU5Py3A6jNTp7bDqU9GbeLVjJUro8crvLmod-aeri-FpNbtlvfVfPW4tT7jQ9-lzOYh4PoIzImtCYysuhRX2WrQAZo2Y8ne5O-qDkjug0ePNU3c2';
+          output: 'HTML';
+          preset: 'light';
+        }
+      > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1425,6 +1439,60 @@ export interface ApiLicensesAndCertificationLicensesAndCertification
       'api::licenses-and-certification.licenses-and-certification'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMembershipPageMembershipPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'membership_pages';
+  info: {
+    description: '';
+    displayName: 'MembershipPage';
+    pluralName: 'membership-pages';
+    singularName: 'membership-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    headerDescription: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    headerImage: Schema.Attribute.Media<'images'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::membership-page.membership-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    thankYouComment: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2391,6 +2459,51 @@ export interface ApiUpcomingAcademieUpcomingAcademie
     };
   };
   attributes: {
+    aboutImages: Schema.Attribute.Media<'images', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    aboutTheSession: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'default';
+        }
+      > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    amount: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<0>;
+    applications: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
     content: Schema.Attribute.RichText &
       Schema.Attribute.Required &
       Schema.Attribute.CustomField<
@@ -2402,8 +2515,17 @@ export interface ApiUpcomingAcademieUpcomingAcademie
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    date: Schema.Attribute.String &
+    endDate: Schema.Attribute.Date &
       Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Flyer: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -2422,13 +2544,20 @@ export interface ApiUpcomingAcademieUpcomingAcademie
       'api::upcoming-academie.upcoming-academie'
     >;
     location: Schema.Attribute.String &
-      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    maxParticipants: Schema.Attribute.String &
+    locationType: Schema.Attribute.Enumeration<['online', 'offline']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.DefaultTo<'offline'>;
+    maxParticipents: Schema.Attribute.Integer &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -2442,7 +2571,57 @@ export interface ApiUpcomingAcademieUpcomingAcademie
           localized: true;
         };
       }>;
+    otherComments: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'default';
+        }
+      > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    otherCommentsImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    pricing: Schema.Attribute.Enumeration<['free', 'paid']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.DefaultTo<'free'>;
+    program_Timeline: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'default';
+        }
+      > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
+    registerationEndDate: Schema.Attribute.Date &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique &
@@ -2451,7 +2630,21 @@ export interface ApiUpcomingAcademieUpcomingAcademie
           localized: true;
         };
       }>;
+    startDate: Schema.Attribute.Date &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     time: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    timeLineImages: Schema.Attribute.Media<'images', true> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -3094,6 +3287,7 @@ declare module '@strapi/strapi' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::job.job': ApiJobJob;
       'api::licenses-and-certification.licenses-and-certification': ApiLicensesAndCertificationLicensesAndCertification;
+      'api::membership-page.membership-page': ApiMembershipPageMembershipPage;
       'api::monthly-summit-talk.monthly-summit-talk': ApiMonthlySummitTalkMonthlySummitTalk;
       'api::page.page': ApiPagePage;
       'api::partener-with-us.partener-with-us': ApiPartenerWithUsPartenerWithUs;

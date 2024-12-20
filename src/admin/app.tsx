@@ -8,7 +8,7 @@ export default {
 
     head: {
       favicon: "",
-      title:"Gray To Green"
+      title: "Gray To Green"
     },
     translations: {
       en: {
@@ -49,7 +49,7 @@ export default {
         info500: '#29B6F6'           // Blue for info elements
       },
     },
-  
+
     locales: [
       // 'ar',
       // 'fr',
@@ -81,7 +81,41 @@ export default {
   },
   bootstrap(app: StrapiApp) {
     document.title = "Gray To Green";
-  
+
+
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+  <a
+  href="https://graytogreen-admin.vercel.app"
+  style="
+    display: block;
+    padding: 6px 16px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    z-index: 9999;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  "
+  onmouseover="this.style.backgroundColor='#0056b3';" 
+  onmouseout="this.style.backgroundColor='#007bff';">
+    Back To Admin
+  </a>
+`;
+
+    // Append this div to the body
+    document.body.appendChild(div);
+
+
     console.log(app);
   },
 }

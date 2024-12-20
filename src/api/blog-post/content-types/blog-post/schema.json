@@ -68,6 +68,20 @@
           "localized": true
         }
       }
+    },
+    "html": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "licenseKey": "NqRZW3MvnU5Py3A6jNTp7bDqU9GbeLVjJUro8crvLmod-aeri-FpNbtlvfVfPW4tT7jQ9-lzOYh4PoIzImtCYysuhRX2WrQAZo2Y8ne5O-qDkjug0ePNU3c2",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
